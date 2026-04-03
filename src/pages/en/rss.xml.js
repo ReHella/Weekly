@@ -55,7 +55,7 @@ export async function GET() {
   return rss({
     title: "Tw93 Weekly",
     description: "Recording engineer Tw93's non-boring life",
-    site: "https://weekly.tw93.fun/en/",
+    site: "https://rehella.github.io/Weekly/en/",
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
       media: "http://search.yahoo.com/mrss/",

@@ -18,7 +18,7 @@ const markdownConfig = {
 };
 
 const DEFAULT_FORMAT = "YYYY/MM/DD";
-const WEEKLY_REPO_NAME = "tw93/weekly";
+const WEEKLY_REPO_NAME = "ReHella/Weekly";
 
 function formatDate(date) {
   return dayjs(date).format(DEFAULT_FORMAT);
@@ -28,8 +28,8 @@ function getFileCreateDate(filePath) {
   return formatDate(fs.statSync(filePath).birthtime);
 }
 
-function getTwitterImage(num) {
-  return num >= 110 ? `https://weekly.tw93.fun/assets/${num}.jpg` : undefined;
+function # getTwitterImage(num) {
+  return num >= 110 ? `https://rehella.github.io/Weekly/assets/${num}.jpg` : undefined;
 }
 
 function defaultLayoutPlugin() {
@@ -81,7 +81,6 @@ function defaultLayoutPlugin() {
 
     if (SITE.repo === WEEKLY_REPO_NAME) {
       const postNumber = filePath.split(/[\/\\]posts[\/\\]/)[1]?.split("-")[0];
-      frontmatter.socialImage = getTwitterImage(postNumber);
     }
   };
 }
