@@ -28,8 +28,8 @@ function getFileCreateDate(filePath) {
   return formatDate(fs.statSync(filePath).birthtime);
 }
 
-function # getTwitterImage(num) {
-  return num >= 110 ? `https://rehella.github.io/Weekly/assets/${num}.jpg` : undefined;
+function getTwitterImage(num) {
+  return num >= 110 ? undefined : undefined;
 }
 
 function defaultLayoutPlugin() {
